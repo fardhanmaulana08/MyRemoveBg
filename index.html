@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Professional background remover tool powered by AI. Remove image backgrounds instantly with high quality results.">
+    <meta name="keywords" content="background remover, image processing, AI, photo editing, transparent background">
+    <title>Background Remover - Professional Image Processing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>Background Remover</h1>
+                <p>Remove image backgrounds in seconds with AI-powered technology</p>
+            </div>
+
+            <div id="uploadArea" class="upload-area">
+                <div class="upload-icon">📁</div>
+                <div class="upload-text">
+                    <h3>Drag & Drop your image here</h3>
+                    <p>or</p>
+                    <button id="selectBtn" class="btn">Choose File</button>
+                </div>
+                <input type="file" id="fileInput" class="file-input" accept="image/*">
+            </div>
+
+            <div id="error" class="error"></div>
+            <div id="success" class="success"></div>
+
+            <div id="previewContainer" class="preview-container" style="display: none;">
+                <div class="preview-box">
+                    <div class="preview-header">Original Image</div>
+                    <div class="preview-content">
+                        <div id="originalPlaceholder" class="placeholder">Upload an image to see preview</div>
+                        <img id="originalImage" style="display: none;">
+                    </div>
+                </div>
+                <div class="preview-box">
+                    <div class="preview-header">Background Removed</div>
+                    <div class="preview-content">
+                        <div id="resultPlaceholder" class="placeholder">Result will appear here</div>
+                        <img id="resultImage" style="display: none;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="removeBtn" class="btn" disabled>
+                    <span>Remove Background</span>
+                </button>
+                <button id="downloadBtn" class="btn btn-secondary" disabled>
+                    <span>Download PNG</span>
+                </button>
+                <button id="resetBtn" class="btn btn-secondary">
+                    <span>Reset</span>
+                </button>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Background Remover. Built with modern web technologies.</p>
+            <p>Powered by Fardhan Maulana Yunandar.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
